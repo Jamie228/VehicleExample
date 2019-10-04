@@ -4,16 +4,42 @@ namespace VehicleExample
 {
     public class Vehicle
     {
-        public string make = "";
-        public string model = "";
-        public struct position
+        string make;
+        public string Model { get; set; }
+
+        protected Position position;
+
+        public string Make
         {
-            public int posx;
-            public int posy;
+            get { return make; }
+            set { make = value; }
         }
+
+        public int X
+        {
+            get { return position.x; }
+        }
+
+        public Vehicle(string make, string model)
+        {
+            this.make = make;
+            this.Model = model;
+        }
+
         public void MoveForward()
         {
+            position.x += 1;
+        }
 
+        public struct Position
+        {
+            public int x, y;
+
+            public Position(int x, int y)
+            {
+                this.x = x;
+                this.y = y;
+            }
         }
     }
 
@@ -22,14 +48,20 @@ namespace VehicleExample
         public int numberOfWheels;
         public int currentGear;
 
+        public Car(int numberOfWheels, string make, string model) : base(make, model)
+        {
+            this.numberOfWheels = numberOfWheels;
+            currentGear = 0;
+        }
+
         public void Reverse()
         {
-
+            position.x -= 1;
         }
     }
 
-    public class Motorbike : Vehicle
-    {                
+    /* public class Motorbike : Vehicle
+    {
         public int numberOfWheels;
         public int currentGear;
 
@@ -37,12 +69,22 @@ namespace VehicleExample
         {
 
         }
-    }
+    } */
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Clear();
+            Console.WriteLine("Vehicles");
+            Car car1 = new Car(4, "Ford", "B-MAX");
+            
+            Console.WriteLine($"{car1.Model} position: {car1.X}");
+            
+            for(int i=0; i < 10; i ++)
+            {
+                car1.MoveForward();
+            }
+            Console.WriteLine($"{car1.Model} position: {car1.X}");
         }
     }
 }
