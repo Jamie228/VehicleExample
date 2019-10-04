@@ -1,0 +1,11 @@
+E:\Files\University\GitHub\VehicleExample\bin\Debug\netcoreapp2.1\VehicleExample.deps.json
+E:\Files\University\GitHub\VehicleExample\bin\Debug\netcoreapp2.1\VehicleExample.runtimeconfig.json
+E:\Files\University\GitHub\VehicleExample\bin\Debug\netcoreapp2.1\VehicleExample.runtimeconfig.dev.json
+E:\Files\University\GitHub\VehicleExample\bin\Debug\netcoreapp2.1\VehicleExample.dll
+E:\Files\University\GitHub\VehicleExample\bin\Debug\netcoreapp2.1\VehicleExample.pdb
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.csprojAssemblyReference.cache
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.csproj.CoreCompileInputs.cache
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.AssemblyInfoInputs.cache
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.AssemblyInfo.cs
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.dll
+E:\Files\University\GitHub\VehicleExample\obj\Debug\netcoreapp2.1\VehicleExample.pdb
